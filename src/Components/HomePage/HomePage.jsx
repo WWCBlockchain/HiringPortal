@@ -14,7 +14,7 @@ export default function HomePage({account}) {
           <div className="frame-1 flex-row-vcenter-hcenter">
             
             <p className="txt-186">Home</p>
-            <p className="txt-496">Freelance</p>
+            {/* <p className="txt-496">Freelance</p> */}
             <p className="txt-448">Post a job</p>
           </div>
         </div>

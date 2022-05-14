@@ -1,7 +1,10 @@
 import React from "react"
 import "./styles.css"
+import { useNavigate } from "react-router-dom";
 
 export default function Signin() {
+  const navigate = useNavigate();
+
   return (
     <div className="signin flex-col-hstart-vstart clip-contents">
       <div className="group-274 flex-col">
@@ -34,14 +37,14 @@ export default function Signin() {
         <div className="group-42 flex-col">
           <p className="txt-831">Create Account</p>
           <div className="group-42 flex-col">
-            <div className="group-358">
-              <p className="txt-1081">Email........</p>
+            <div className="group-358" >
+              <p className="txt-1081" >mishra98@gmail.com</p>
             </div>
-            <div className="group-322">
-              <p className="txt-1081">Password........</p>
+            <div className="group-322" >
+              <p className="txt-1081" name="Password">************</p>
             </div>
             <div className="frame-19 flex-row-vcenter-hcenter">
-              <p className="txt-917">Continue</p>
+              <p className="txt-917" onClick={()=>navigate("/jobposting")}>Continue</p>
             </div>
           </div>
         </div>
